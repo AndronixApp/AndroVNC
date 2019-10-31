@@ -879,7 +879,7 @@ select:active {
   text-shadow: 0.1em 0.1em 0 black;
 }
 .noVNC_logo span{
-  color:green;
+  color: orange;
 }
 
 #noVNC_bell {
