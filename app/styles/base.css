@@ -750,34 +750,39 @@ select:active {
 #noVNC_connect_button {
   cursor: pointer;
 
-  padding: 10px;
-
-  color: white;
-  background-color: rgb(110, 132, 163);
-  border-radius: 12px;
-
+  margin: 2px;
+  padding: 5px 30px;
+	box-shadow: 0px 4px 22px -7px #454545;
+	background-color:#ffa200;
+	border-radius:5px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+  padding:11px 24px;
+  vertical-align: middle;
+  text-decoration:none;
   text-align: center;
-  font-size: 20px;
-
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
+	text-shadow:0px 1px 0px #262626;
 }
 #noVNC_connect_button div {
   margin: 2px;
   padding: 5px 30px;
-  border: 1px solid rgb(83, 99, 122);
+	background-color:#ffa200;
   border-bottom-width: 2px;
   border-radius: 5px;
-  background: linear-gradient(to top, rgb(110, 132, 163), rgb(99, 119, 147));
+  background: #ffa200;
 
   /* This avoids it jumping around when :active */
   vertical-align: middle;
 }
-#noVNC_connect_button div:active {
+#noVNC_connect_button:active {
   border-bottom-width: 1px;
   margin-top: 3px;
 }
-:root:not(.noVNC_touch) #noVNC_connect_button div:hover {
-  background: linear-gradient(to top, rgb(110, 132, 163), rgb(105, 125, 155));
+:root:not(.noVNC_touch) #noVNC_connect_button:hover {
+  background-color:#f5bb0e;
 }
 
 #noVNC_connect_button img {
@@ -865,21 +870,27 @@ select:active {
 /*Default noVNC logo.*/
 /* From: http://fonts.googleapis.com/css?family=Orbitron:700 */
 @font-face {
-  font-family: 'Orbitron';
+  font-family: 'ProductSansR';
   font-style: normal;
   font-weight: 700;
-  src: local('?'), url('Orbitron700.woff') format('woff'),
-                   url('Orbitron700.ttf') format('truetype');
+  src: local('?'), url('ProductSansR.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ProductSansB';
+  font-style: normal;
+  font-weight: 700;
+  src: local('?'), url('ProductSansB.ttf') format('truetype');
 }
 
 .noVNC_logo {
   color:orange;
-  font-family: 'Orbitron', 'OrbitronTTF', sans-serif;
+  font-family: 'ProductSansB', sans-serif;
   line-height:90%;
   text-shadow: 0.1em 0.1em 0 black;
 }
 .noVNC_logo span{
-  color: orange;
+  color: white;
 }
 
 #noVNC_bell {
